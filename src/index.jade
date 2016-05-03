@@ -1,0 +1,13 @@
+extends _layouts/base
+
+include _modules/link/link
+include _modules/header/header
+
+
+block content
+  +header("TL;DR License")
+    block header
+      span.header-title Hello
+  .container
+    include main/index.jade
+    

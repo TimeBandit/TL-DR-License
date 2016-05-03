@@ -1,0 +1,81 @@
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block main
+  .container 
+    
+    .license-definitions
+      .permissions  
+        .card
+          .permission
+            .permission-color.permission-commercial
+            .splitter.permission-color-seperator
+            
+            .permission-name Commercial Use
+        
+        .card      
+          .permission
+            .permission-color.permission-distribution
+            .splitter.permission-color-seperator
+            
+            .permission-name Distribution
+            
+        .card
+          .permission
+            .permission-color.permission-modification
+            .splitter.permission-color-seperator  
+            
+            .permission-name Modification
+            
+        .card
+          .permission
+            .permission-color.permission-patent
+            .splitter.permission-color-seperator
+            
+            .permission-name Patent Use
+      
+        .card
+          .permission
+            .permission-color.permission-private
+            .splitter.permission-color-seperator
+            
+            .permission-name Private Use
+              
+        .conditions
+        .limitations
+    
+    h1 Popular Licenses
+    .license-container
+      .license-list
+        .license-labels
+          .list-item.card.license-labels-items
+            span.label-license-name Name
+            div.splitter.label-license-name-splitter
+            span.label-license-tldr TL;DR
+          
+        .list-item.card
+          span.license-name MIT
+          div.splitter.name-splitter
+          div.license-tldr Allow modification plus commercial and personal use 
+          i.copy.material-icons content_copy   
+        
+        .list-item.card
+          span.license-name BSD
+          div.splitter.name-splitter
+          div.license-tldr
+          i.copy.material-icons content_copy
+        
+        .list-item.card 
+          span.license-name ISC
+          div.splitter.name-splitter
+          div.license-tldr
+          i.copy.material-icons content_copy
+        
+        .list-item.card
+          span.license-name MIT
+          div.splitter.name-splitter
+          div.license-tldr
+          i.copy.material-icons content_copy
+
+  

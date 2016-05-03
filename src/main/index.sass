@@ -1,0 +1,79 @@
+@import ../_styles/vars
+
+.container
+  max-width: 960px
+  height: 40px
+  margin: 0 auto
+  box-sizing: border-box
+  padding: 15px
+
+  .splitter
+    height: 100%
+    width: 1px
+    background-color: #EBEBEB
+    position: absolute
+    top: 0
+
+  .license-definitions
+    margin-bottom: 20px
+
+    .permissions
+      height: 100%
+
+      .permission
+        .permission-color
+
+
+        .permission-color-seperator
+          left: 42px
+
+        .permission-name
+          padding-left: 52px
+
+    .conditions
+
+    .limitations
+
+
+  .license-container
+    border-top: 1px solid #EBEBEB
+    border-radius: 2px
+
+    .license-list
+      .license-labels
+        .label-license-name
+          font-weight: 600
+
+        .label-license-name-splitter
+          left: 100px
+
+
+        .label-license-tldr
+          font-weight: 600
+          position: absolute
+          left: 110px
+
+      .list-item
+        .copy
+          background-color: $accent-500
+          position: absolute
+          top: 0
+          right: 0
+          width: 42px
+          height: 100%
+          color: white
+          text-align: center
+          line-height: 42px
+          cursor: pointer
+          font-size: 18px
+
+        .name-splitter
+          left: 100px
+
+        &:not(:first-child)
+          cursor: pointer
+
+        .license-tldr
+          position: absolute
+          left: 110px
+          top: 10px
