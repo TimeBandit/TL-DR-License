@@ -15,14 +15,109 @@
     top: 0
 
   .license-definitions
+    width: 100%
     margin-bottom: 20px
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: $breakpoint-medium)
+      flex-direction: column
+
+
+    .legal-labels
+      .legal-label
+
+      .legal-label-permissions
+        padding-left: 52px
+        font-weight: 600
+
+      .legal-label-permissions-splitter-left
+        left: 42px
+
+      .legal-label-permissions-splitter-right
+        left: 200px
+
+
+    .legal-catgory
+      height: 100%
+      position: relative
+      width: 100%
+      margin: 0px 5px
+
+      @media (max-width: $breakpoint-medium)
+        margin-top: 15px
+
+    .conditions
+      .legal-label-conditions
+        padding-left: 52px
+
+      .conditions-color-splitter-left
+        left: 42px
+        z-index: 1
+
+      .conditions-color-splitter-right
+        left: 200px
+        z-index: 1
+
+      .condition
+        .condition-color
+          width: 22px
+          height: 22px
+          position: absolute
+
+        .condition-disclose
+          background-color: $blue-900
+
+        .condition-license-and-copyright-notice
+          background-color: $blue-700
+
+        .condition-network-use
+          background-color: $blue-500
+
+        .condition-same-license
+          background-color: $blue-300
+
+        .condition-state-changes
+          background-color: $blue-100
+
+        .condition-color-seperator
+          left: 42px
+
+        .condition-name
+          padding-left: 52px
 
     .permissions
-      height: 100%
+      .legal-label-permissions
+        padding-left: 52px
+
+      .permissions-color-splitter-left
+        left: 42px
+        z-index: 1
+
+      .permissions-color-splitter-right
+        left: 200px
+        z-index: 1
 
       .permission
         .permission-color
+          width: 22px
+          height: 22px
+          position: absolute
 
+        .permission-commercial
+          background-color: $green-900
+
+        .permission-distribution
+          background-color: $green-700
+
+        .permission-modification
+          background-color: $green-500
+
+        .permission-patent
+          background-color: $green-300
+
+        .permission-private
+          background-color: $green-100
 
         .permission-color-seperator
           left: 42px
@@ -30,9 +125,38 @@
         .permission-name
           padding-left: 52px
 
-    .conditions
+
 
     .limitations
+      .legal-label-limitations
+        padding-left: 52px
+
+      .limitations-color-splitter-left
+        left: 42px
+        z-index: 1
+
+      .limitations-color-splitter-right
+        left: 200px
+        z-index: 1
+
+      .limitation
+        .limitation-color
+          width: 22px
+          height: 22px
+          position: absolute
+
+        .limitation-hold-liable
+          background-color: $primary-900
+
+        .limitation-trademark-use
+          background-color: $primary-700
+
+
+        .limitation-color-seperator
+          left: 42px
+
+        .limitation-name
+          padding-left: 52px
 
 
   .license-container

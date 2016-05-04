@@ -6,45 +6,87 @@ block main
   .container 
     
     .license-definitions
-      .permissions  
+        
+      .permissions.legal-catgory
+        .card
+          .legal-label.legal-label-permissions Conditions
+    
+        .splitter.permissions-color-splitter-left
+
         .card
           .permission
             .permission-color.permission-commercial
-            .splitter.permission-color-seperator
-            
             .permission-name Commercial Use
         
         .card      
           .permission
             .permission-color.permission-distribution
-            .splitter.permission-color-seperator
-            
             .permission-name Distribution
             
         .card
           .permission
             .permission-color.permission-modification
-            .splitter.permission-color-seperator  
-            
             .permission-name Modification
             
         .card
           .permission
             .permission-color.permission-patent
-            .splitter.permission-color-seperator
-            
             .permission-name Patent Use
       
         .card
           .permission
             .permission-color.permission-private
-            .splitter.permission-color-seperator
-            
             .permission-name Private Use
-              
-        .conditions
-        .limitations
+      
+      .conditions.legal-catgory
+        .card
+          .legal-label.legal-label-conditions Permissions
     
+        .splitter.conditions-color-splitter-left
+
+        .card
+          .condition
+            .condition-color.condition-disclose
+            .condition-name Disclose Source
+        
+        .card      
+          .condition
+            .condition-color.condition-license-and-copyright-notice
+            .condition-name License and Copyright Notice
+            
+        .card
+          .condition
+            .condition-color.condition-network-use
+            .condition-name Network Use Is Distribution
+            
+        .card
+          .condition
+            .condition-color.condition-same-license
+            .condition-name Same License
+      
+        .card
+          .condition
+            .condition-color.condition-state-changes
+            .condition-name State Changes
+        
+      .limitations.legal-catgory
+        .card
+          .legal-label.legal-label-limitations Limitations
+    
+        .splitter.limitations-color-splitter-left
+
+        .card
+          .limitation
+            .limitation-color.limitation-hold-liable
+            .limitation-name Hold Liable
+        
+        .card      
+          .limitation
+            .limitation-color.limitation-trademark-use
+            .limitation-name Trademark Use
+    
+                
+            
     h1 Popular Licenses
     .license-container
       .license-list
@@ -52,30 +94,23 @@ block main
           .list-item.card.license-labels-items
             span.label-license-name Name
             div.splitter.label-license-name-splitter
-            span.label-license-tldr TL;DR
           
         .list-item.card
           span.license-name MIT
           div.splitter.name-splitter
-          div.license-tldr Allow modification plus commercial and personal use 
+          
+          div.license-conditions
+          div.splitter.license-conditions-splitter
+            
+          div.license-permissions
+          div.splitter.license-permissions-splitter
+            
+          div.license-limitations
+          div.splitter.license-limitations-splitter  
+            
+            
           i.copy.material-icons content_copy   
         
-        .list-item.card
-          span.license-name BSD
-          div.splitter.name-splitter
-          div.license-tldr
-          i.copy.material-icons content_copy
         
-        .list-item.card 
-          span.license-name ISC
-          div.splitter.name-splitter
-          div.license-tldr
-          i.copy.material-icons content_copy
-        
-        .list-item.card
-          span.license-name MIT
-          div.splitter.name-splitter
-          div.license-tldr
-          i.copy.material-icons content_copy
 
   
