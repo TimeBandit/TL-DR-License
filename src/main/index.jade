@@ -9,7 +9,7 @@ block main
         
       .permissions.legal-catgory
         .card
-          .legal-label.legal-label-permissions Conditions
+          .legal-label.legal-label-permissions Permissons
     
         .splitter.permissions-color-splitter-left
 
@@ -40,7 +40,7 @@ block main
       
       .conditions.legal-catgory
         .card
-          .legal-label.legal-label-conditions Permissions
+          .legal-label.legal-label-conditions Conditions
     
         .splitter.conditions-color-splitter-left
 
@@ -90,27 +90,140 @@ block main
     h1 Popular Licenses
     .license-container
       .license-list
+        .license-splitters
+          .splitter.license-splitter-left
+          .splitter.license-splitter-middle
+          .splitter.license-splitter-right
+          
         .license-labels
           .list-item.card.license-labels-items
             span.label-license-name Name
-            div.splitter.label-license-name-splitter
+            span.label-license-permissions Permissions
+            span.label-license-conditions Conditions            
+            span.label-license-limitations Limitations
           
-        .list-item.card
-          span.license-name MIT
-          div.splitter.name-splitter
+        .list-item.card.license-item
+          .license-item-collapsed
+            span.license-name MIT
+            div.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use
+              .license-color-code.license-color-code-permission-distribution
+              .license-color-code.license-color-code-permission-modification
+              .license-color-code.license-color-code-permission-private-use
+                
+            div.license-conditions
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable
+                
+            i.copy.material-icons content_copy   
           
-          div.license-conditions
-          div.splitter.license-conditions-splitter
-            
-          div.license-permissions
-          div.splitter.license-permissions-splitter
-            
-          div.license-limitations
-          div.splitter.license-limitations-splitter  
-            
-            
-          i.copy.material-icons content_copy   
+          .license-item-expanded 
+            i.material-icons.close-icon close
+            .title-banner-container
+              .title-banner MIT
         
+        .list-item.card.license-item
+          .license-item-collapsed
+            span.license-name Apache License 2.0
+            div.license-category.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use
+              .license-color-code.license-color-code-permission-distribution
+              .license-color-code.license-color-code-permission-modification
+              .license-color-code.license-color-code-permission-patent-use
+              .license-color-code.license-color-code-permission-private-use
+                
+            div.license-category.license-conditions
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+              .license-color-code.license-color-code-conditions-state-changes
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable
+              .license-color-code.license-color-code-limitations-trademark-use
+            
+            i.copy.material-icons content_copy  
         
+          .license-item-expanded 
+            i.material-icons.close-icon close
+      
+      
+        .list-item.card.license-item
+          .license-item-collapsed
+            span.license-name GNU AGPLv3
+            div.license-category.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use
+              .license-color-code.license-color-code-permission-distribution
+              .license-color-code.license-color-code-permission-modification
+              .license-color-code.license-color-code-permission-patent-use
+              .license-color-code.license-color-code-permission-private-use
+                
+            div.license-category.license-conditions
+              .license-color-code.license-color-code-conditions-disclose-source
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+              .license-color-code.license-color-code-conditions-network-use-is-distribution
+              .license-color-code.license-color-code-conditions-same-license
+              .license-color-code.license-color-code-conditions-state-changes
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable
+                    
+            i.copy.material-icons content_copy   
+          
+          .license-item-expanded 
+            i.material-icons.close-icon close 
+          
+          
+        .list-item.card.license-item
+          .license-item-collapsed
+            span.license-name GNU LGPLv3
+            div.license-category.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use
+              .license-color-code.license-color-code-permission-distribution
+              .license-color-code.license-color-code-permission-modification
+              .license-color-code.license-color-code-permission-patent-use
+              .license-color-code.license-color-code-permission-private-use
+                
+            div.license-category.license-conditions
+              .license-color-code.license-color-code-conditions-disclose-source
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+              .license-color-code.license-color-code-conditions-same-license
+              .license-color-code.license-color-code-conditions-state-changes
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable
+                    
+            i.copy.material-icons content_copy
+          
+          .license-item-expanded
+            i.material-icons.close-icon close
+          
+        .list-item.card.license-item
+          .license-item-collapsed
+            span.license-name GNU GPLv3
+            div.license-category.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use
+              .license-color-code.license-color-code-permission-distribution
+              .license-color-code.license-color-code-permission-modification
+              .license-color-code.license-color-code-permission-patent-use
+              .license-color-code.license-color-code-permission-private-use
+                
+            div.license-category.license-conditions
+              .license-color-code.license-color-code-conditions-disclose-source
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+              .license-color-code.license-color-code-conditions-same-license
+              .license-color-code.license-color-code-conditions-state-changes
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable
+                    
+            i.copy.material-icons content_copy
+          
+          .license-item-expanded 
+            i.material-icons.close-icon close
+          
+    .message More licenses coming soon!   
+    
+  
 
   

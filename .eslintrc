@@ -9,6 +9,7 @@
     "DocumentFragment": true
   },
   "rules": {
+    "esversion": 6,
     "indent": [2, 2],
     "valid-jsdoc": 0,
     "brace-style": [1, "stroustrup"],
