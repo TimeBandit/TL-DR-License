@@ -3,10 +3,16 @@ block config
   - var baseUrl = '../'
 
 block main
-  .container 
+  .container
+    .toast.toast-successfull 
+      i.material-icons.icon.icon-check check
+      | Copied!
+      
+    .toast.toast-fail
+      .material-icons.icon.icon-fail close
+      | Copy failed!
     
     .license-definitions
-        
       .permissions.legal-catgory
         .card
           .legal-label.legal-label-permissions Permissons
@@ -104,125 +110,227 @@ block main
           
         .list-item.card.license-item
           .license-item-collapsed
+            .mobile-splitters
+              .splitter.mobile-splitter-left
+              .mobile-splitter.mobile-splitter-top
+              .mobile-splitter.mobile-splitter-middle
+              .mobile-splitter.mobile-splitter-bottom
+            
+            .mobile-labels
+              .mobile-label.mobile-label-name Name
+              .mobile-label.mobile-label-permissions Permissions 
+              .mobile-label.mobile-label-conditions Conditions
+              .mobile-label.mobile-label-limitations Limitations
+                
             span.license-name MIT
             div.license-permissions
-              .license-color-code.license-color-code-permission-commercial-use
-              .license-color-code.license-color-code-permission-distribution
-              .license-color-code.license-color-code-permission-modification
-              .license-color-code.license-color-code-permission-private-use
+              .license-color-code.license-color-code-permission-commercial-use(data-tooltip-content="Commercial Use")
+              .license-color-code.license-color-code-permission-distribution(data-tooltip-content="Distribution")
+              .license-color-code.license-color-code-permission-modification(data-tooltip-content="Modification")
+              .license-color-code.license-color-code-permission-private-use(data-tooltip-content="Private Use")
                 
             div.license-conditions
-              .license-color-code.license-color-code-conditions-license-and-copyright-notice
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice(data-tooltip-content="License and Copyright Notice")
             
             div.license-limitations
-              .license-color-code.license-color-code-limitations-hold-liable
+              .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                 
-            i.copy.material-icons content_copy   
+            i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-mit") content_copy   
           
           .license-item-expanded 
             i.material-icons.close-icon close
             .title-banner-container
               .title-banner MIT
+              
+            .license-data-container
+              .license-detailed#license-detailed-mit
+                include ../licenses/MIT/index.jade
+              .license-about A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.
+                .license-copy-text.copy-content(data-clipboard-target="#license-detailed-mit") copy license text
         
         .list-item.card.license-item
           .license-item-collapsed
+            .mobile-splitters
+              .splitter.mobile-splitter-left
+              .mobile-splitter.mobile-splitter-top
+              .mobile-splitter.mobile-splitter-middle
+              .mobile-splitter.mobile-splitter-bottom
+            
+            .mobile-labels
+              .mobile-label.mobile-label-name Name
+              .mobile-label.mobile-label-permissions Permissions 
+              .mobile-label.mobile-label-conditions Conditions
+              .mobile-label.mobile-label-limitations Limitations
+              
             span.license-name Apache License 2.0
             div.license-category.license-permissions
-              .license-color-code.license-color-code-permission-commercial-use
-              .license-color-code.license-color-code-permission-distribution
-              .license-color-code.license-color-code-permission-modification
-              .license-color-code.license-color-code-permission-patent-use
-              .license-color-code.license-color-code-permission-private-use
+              .license-color-code.license-color-code-permission-commercial-use(data-tooltip-content="Commercial Use")
+              .license-color-code.license-color-code-permission-distribution(data-tooltip-content="Distribution")
+              .license-color-code.license-color-code-permission-modification(data-tooltip-content="Modification")
+              .license-color-code.license-color-code-permission-patent-use(data-tooltip-content="Patent Use")
+              .license-color-code.license-color-code-permission-private-use(data-tooltip-content="Private Use")
                 
             div.license-category.license-conditions
-              .license-color-code.license-color-code-conditions-license-and-copyright-notice
-              .license-color-code.license-color-code-conditions-state-changes
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice(data-tooltip-content="License and Copyright Notice")
+              .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
             div.license-limitations
-              .license-color-code.license-color-code-limitations-hold-liable
-              .license-color-code.license-color-code-limitations-trademark-use
+              .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
+              .license-color-code.license-color-code-limitations-trademark-use(data-tooltip-content="Trademark Use")
             
-            i.copy.material-icons content_copy  
+            i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-apache_2") content_copy  
         
           .license-item-expanded 
             i.material-icons.close-icon close
+            .title-banner-container
+              .title-banner Apache License 2.0
+              
+            .license-data-container
+              .license-detailed#license-detailed-apache_2
+                include ../licenses/Apache_2.0/index.jade
+              .license-about A permissive license that also provides an express grant of patent rights from contributors to users.
+                .license-copy-text.copy-content(data-clipboard-target="#license-detailed-apache_2") copy license text
+        
       
       
         .list-item.card.license-item
           .license-item-collapsed
+            .mobile-splitters
+              .splitter.mobile-splitter-left
+              .mobile-splitter.mobile-splitter-top
+              .mobile-splitter.mobile-splitter-middle
+              .mobile-splitter.mobile-splitter-bottom
+            
+            .mobile-labels
+              .mobile-label.mobile-label-name Name
+              .mobile-label.mobile-label-permissions Permissions 
+              .mobile-label.mobile-label-conditions Conditions
+              .mobile-label.mobile-label-limitations Limitations
+              
             span.license-name GNU AGPLv3
             div.license-category.license-permissions
-              .license-color-code.license-color-code-permission-commercial-use
-              .license-color-code.license-color-code-permission-distribution
-              .license-color-code.license-color-code-permission-modification
-              .license-color-code.license-color-code-permission-patent-use
-              .license-color-code.license-color-code-permission-private-use
+              .license-color-code.license-color-code-permission-commercial-use(data-tooltip-content="Commercial Use")
+              .license-color-code.license-color-code-permission-distribution(data-tooltip-content="Distribution")
+              .license-color-code.license-color-code-permission-modification(data-tooltip-content="Modification")
+              .license-color-code.license-color-code-permission-patent-use(data-tooltip-content="Patent Use")
+              .license-color-code.license-color-code-permission-private-use(data-tooltip-content="Private Use")
                 
             div.license-category.license-conditions
-              .license-color-code.license-color-code-conditions-disclose-source
-              .license-color-code.license-color-code-conditions-license-and-copyright-notice
-              .license-color-code.license-color-code-conditions-network-use-is-distribution
-              .license-color-code.license-color-code-conditions-same-license
-              .license-color-code.license-color-code-conditions-state-changes
+              .license-color-code.license-color-code-conditions-disclose-source(data-tooltip-content="Disclose Source")
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice(data-tooltip-content="License and Copyright")
+              .license-color-code.license-color-code-conditions-network-use-is-distribution(data-tooltip-content="Network Use Is Distribution")
+              .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="Same License")
+              .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
             div.license-limitations
-              .license-color-code.license-color-code-limitations-hold-liable
+              .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                     
-            i.copy.material-icons content_copy   
+            i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-agplv3") content_copy   
           
           .license-item-expanded 
-            i.material-icons.close-icon close 
+            i.material-icons.close-icon close
+            .title-banner-container
+              .title-banner GNU AGPLv3
+              
+            .license-data-container
+              .license-detailed#license-detailed-gnu-agplv3
+                include ../licenses/GNU_AGPLv3/index.jade
+              .license-about When distributing derived works, the source code of the work must be made available under the same license. 
+                .license-copy-text.copy-content(data-clipboard-target="#license-detailed-gnu-agplv3") copy license text 
           
           
         .list-item.card.license-item
           .license-item-collapsed
+            .mobile-splitters
+              .splitter.mobile-splitter-left
+              .mobile-splitter.mobile-splitter-top
+              .mobile-splitter.mobile-splitter-middle
+              .mobile-splitter.mobile-splitter-bottom
+            
+            .mobile-labels
+              .mobile-label.mobile-label-name Name
+              .mobile-label.mobile-label-permissions Permissions 
+              .mobile-label.mobile-label-conditions Conditions
+              .mobile-label.mobile-label-limitations Limitations
+              
             span.license-name GNU LGPLv3
             div.license-category.license-permissions
-              .license-color-code.license-color-code-permission-commercial-use
-              .license-color-code.license-color-code-permission-distribution
-              .license-color-code.license-color-code-permission-modification
-              .license-color-code.license-color-code-permission-patent-use
-              .license-color-code.license-color-code-permission-private-use
+              .license-color-code.license-color-code-permission-commercial-use(data-tooltip-content="Commercial Use")
+              .license-color-code.license-color-code-permission-distribution(data-tooltip-content="Distribution")
+              .license-color-code.license-color-code-permission-modification(data-tooltip-content="Modification")
+              .license-color-code.license-color-code-permission-patent-use(data-tooltip-content="Patent Use")
+              .license-color-code.license-color-code-permission-private-use(data-tooltip-content="Private Use")
                 
             div.license-category.license-conditions
-              .license-color-code.license-color-code-conditions-disclose-source
-              .license-color-code.license-color-code-conditions-license-and-copyright-notice
-              .license-color-code.license-color-code-conditions-same-license
-              .license-color-code.license-color-code-conditions-state-changes
+              .license-color-code.license-color-code-conditions-disclose-source(data-tooltip-content="Disclose Source")
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice(data-tooltip-content="License and Copyright Notice")
+              .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="same License")
+              .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
             div.license-limitations
-              .license-color-code.license-color-code-limitations-hold-liable
+              .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                     
-            i.copy.material-icons content_copy
-          
-          .license-item-expanded
-            i.material-icons.close-icon close
-          
-        .list-item.card.license-item
-          .license-item-collapsed
-            span.license-name GNU GPLv3
-            div.license-category.license-permissions
-              .license-color-code.license-color-code-permission-commercial-use
-              .license-color-code.license-color-code-permission-distribution
-              .license-color-code.license-color-code-permission-modification
-              .license-color-code.license-color-code-permission-patent-use
-              .license-color-code.license-color-code-permission-private-use
-                
-            div.license-category.license-conditions
-              .license-color-code.license-color-code-conditions-disclose-source
-              .license-color-code.license-color-code-conditions-license-and-copyright-notice
-              .license-color-code.license-color-code-conditions-same-license
-              .license-color-code.license-color-code-conditions-state-changes
-            
-            div.license-limitations
-              .license-color-code.license-color-code-limitations-hold-liable
-                    
-            i.copy.material-icons content_copy
+            i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-lgplv3") content_copy
           
           .license-item-expanded 
             i.material-icons.close-icon close
+            .title-banner-container
+              .title-banner GNU LGPLv3
+              
+            .license-data-container
+              .license-detailed#license-detailed-gnu-lgplv3
+                include ../licenses/GNU_LGPLv3/index.jade
+              .license-about Version 3 of the GNU LGPL is an additional set of permissions to the GNU GPLv3 license that requires that derived works be licensed under the same license.
+                .license-copy-text.copy-content(data-clipboard-target="#license-detailed-gnu-lgplv3") copy license text 
           
-    .message More licenses coming soon!   
+          
+        .list-item.card.license-item
+          .license-item-collapsed
+            .mobile-splitters
+              .splitter.mobile-splitter-left
+              .mobile-splitter.mobile-splitter-top
+              .mobile-splitter.mobile-splitter-middle
+              .mobile-splitter.mobile-splitter-bottom
+            
+            .mobile-labels
+              .mobile-label.mobile-label-name Name
+              .mobile-label.mobile-label-permissions Permissions 
+              .mobile-label.mobile-label-conditions Conditions
+              .mobile-label.mobile-label-limitations Limitations
+              
+            span.license-name GNU GPLv3
+            div.license-category.license-permissions
+              .license-color-code.license-color-code-permission-commercial-use(data-tooltip-content="Commercial Use")
+              .license-color-code.license-color-code-permission-distribution(data-tooltip-content="Distribution")
+              .license-color-code.license-color-code-permission-modification(data-tooltip-content="Modification")
+              .license-color-code.license-color-code-permission-patent-use(data-tooltip-content="Patent Use")
+              .license-color-code.license-color-code-permission-private-use(data-tooltip-content="Private Use")
+                
+            div.license-category.license-conditions
+              .license-color-code.license-color-code-conditions-disclose-source(data-tooltip-content="Disclose Source")
+              .license-color-code.license-color-code-conditions-license-and-copyright-notice(data-tooltip-content="License and Copyrright Notice")
+              .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="Same License")
+              .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
+            
+            div.license-limitations
+              .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
+                    
+            i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-gplv3") content_copy
+          
+          .license-item-expanded 
+            i.material-icons.close-icon close
+            .title-banner-container
+              .title-banner GNU GPLv3
+              
+            .license-data-container
+              .license-detailed#license-detailed-gnu-gplv3
+                include ../licenses/GNU_GPLv3/index.jade
+              .license-about The GNU GPL is the most widely used free software license. When distributing derived works, the source code of the work must be made available under the same license.
+                .license-copy-text.copy-content(data-clipboard-target="#license-detailed-gnu-gplv3") copy license text 
+          
+    .credit
+      .credit-created-by Made by 
+        a(href="https://twitter.com/MaximilianLloyd") Max    
     
   
 
