@@ -8,6 +8,9 @@
   padding: 15px
   padding-left: 10px
 
+  .title
+    padding-top: 20px
+
   .toast
     position: fixed
     width: 200px
@@ -530,19 +533,19 @@
   background: black
   padding: 5px
   position: absolute
-  white-space: nowrap
   border-radius: .20rem
   margin-top: -2rem
-  z-index: 1001
+  z-index: 6000
 
 
 [data-tooltip-content]::after, [data-tooltip-content]::before
   opacity: 0
   visibility: hidden
   transition: opacity .3s ease, visibility .3s ease
-  z-index: 1001
+  z-index: 6000
 
 [data-tooltip-content]:hover::after,[data-tooltip-content]:hover::before
   opacity: 1
   visibility: visible
-  z-index: 1001
+  z-index: 6000
+  max-width: 300px
