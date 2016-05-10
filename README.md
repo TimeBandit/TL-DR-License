@@ -11,6 +11,4 @@ Helps you find a license for your project.
 
 ## License
 
-Apache 2.0. See [/LICENSE](/LICENSE)
-
-Please note: this is not a Google product
+GNU GENERAL PUBLIC LICENSE See [/LICENSE](/LICENSE)
