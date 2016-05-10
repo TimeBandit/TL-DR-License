@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let clipboard = new Clipboard('.copy-content', {
     text: function(trigger) {
       console.log('lalala');
-      return findAncestor(trigger, 'license-item').querySelector('.license-detailed').innerText;
+      return findAncestor(trigger, 'license-item').querySelector('.license-detailed').textContent.replace(/^\s+$/g,'');
     }
   });
 

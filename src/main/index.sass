@@ -529,7 +529,7 @@
   background: black
   padding: 5px
   position: absolute
-  white-space: nowrap 
+  white-space: nowrap
   border-radius: .20rem
   margin-top: -2rem
   z-index: 6000
@@ -545,3 +545,11 @@
   opacity: 1
   visibility: visible
   z-index: 6000
+
+.tooltip-color-code
+  cursor: default
+
+.tooltip-color-code[data-tooltip-content]::after
+  margin-top: 10px
+  max-width: 293.33px
+  margin-left: -5px
