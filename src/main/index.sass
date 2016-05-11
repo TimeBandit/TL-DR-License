@@ -9,10 +9,20 @@
   padding-left: 10px
 
   .info-hover
-    @media (max-width: $breakpoint-small)
+    padding: 5px
+    padding-bottom: 10px
+
+  .info-hover-desktop
+    @media(max-width: 680px)
       display: none
 
-  .title
+  .info-hover-mobile
+    display: none
+    @media(max-width: 680px)
+      display: block
+
+
+    .title
     padding-top: 20px
 
   .toast
@@ -262,7 +272,7 @@
 
         .license-name
           @media(max-width: $breakpoint-small)
-            margin-left: 190px
+            margin-left: 130px
 
         .mobile-labels
           display: none
@@ -271,6 +281,7 @@
 
           .mobile-label
             position: absolute
+            font-weight: 600
 
           .mobile-label-name
 
@@ -295,7 +306,7 @@
             left: 0
 
           .mobile-splitter-left
-            left: 185px
+            left: 125px
 
           .mobile-splitter-top
             top: 40px
@@ -419,8 +430,6 @@
           position: relative
           top: 0
 
-
-
         .license-permissions
           margin-left: 192.5px
           width: 90px
@@ -428,10 +437,10 @@
           margin-top: -22px
 
           @media(max-width: $breakpoint-small)
-            margin-left: 187px
+            margin-left: 130px
             margin-top: 20px
             width: auto
-            box-sizing: border-box
+            margin-right: 5px
 
           .license-color-code-permission-commercial-use
             background-color: $green-900
@@ -456,9 +465,10 @@
           margin-top: -22px
 
           @media(max-width: $breakpoint-small)
-            margin-left: 187px
+            margin-left: 130px
             margin-top: 20px
             width: auto
+            margin-right: 5px
 
           .license-color-code-conditions-disclose-source
             background-color: $blue-900
@@ -484,9 +494,10 @@
           margin-top: -22px
 
           @media(max-width: $breakpoint-small)
-            margin-left: 187px
+            margin-left: 130px
             margin-top: 20px
             width: auto
+            margin-right: 5px
 
 
           .license-color-code-limitations-hold-liable

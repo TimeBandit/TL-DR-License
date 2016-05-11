@@ -4,6 +4,9 @@ block config
 
 block main
   .container
+    .info-hover.info-hover-desktop Hover over the properties to get a detailed description.
+    .info-hover.info-hover-mobile Click the properties to get a more detailed description
+                
     .toast.toast-successfull 
       i.material-icons.icon.icon-check check
       | Copied!
@@ -91,10 +94,9 @@ block main
             .limitation-color.limitation-trademark-use
             .limitation-name Trademark Use
     
-    .info-hover Hover over the properties to get a more detailed description.
-                
+    
             
-    h1.title Popular Licenses
+    h1.title Licenses
     .license-container
       .license-list
         .license-splitters
@@ -223,7 +225,7 @@ block main
               .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="Same License")
               .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
-            div.license-limitations
+            div.license-category.license-limitations
               .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                     
             i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-agplv3") content_copy   
@@ -268,7 +270,7 @@ block main
               .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="same License")
               .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
-            div.license-limitations
+            div.license-category.license-limitations
               .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                     
             i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-lgplv3") content_copy
@@ -313,7 +315,7 @@ block main
               .license-color-code.license-color-code-conditions-same-license(data-tooltip-content="Same License")
               .license-color-code.license-color-code-conditions-state-changes(data-tooltip-content="State Changes")
             
-            div.license-limitations
+            div.license-category.license-limitations
               .license-color-code.license-color-code-limitations-hold-liable(data-tooltip-content="Hold Liable")
                     
             i.copy.material-icons.copy-content(data-clipboard-target="#license-detailed-gnu-gplv3") content_copy
