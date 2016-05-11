@@ -44,8 +44,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   let clipboard = new Clipboard('.copy-content', {
     text: function(trigger) {
-      console.log('lalala');
-      return findAncestor(trigger, 'license-item').querySelector('.license-detailed').textContent.replace(/^\s+$/g,'');
+      let text = findAncestor(trigger, 'license-item').querySelector('.license-detailed').textContent;
+      text = text.replace(/^[^\S\r\n]+/gm,'').trim();
+      return text;
     }
   });
 
@@ -73,7 +74,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let cards = document.querySelectorAll('.license-item');
   for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
-
 
     card.addEventListener('click', (event) => {
       let card_content_collapsed = card.querySelector('.license-item-collapsed');
