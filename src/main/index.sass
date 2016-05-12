@@ -23,7 +23,7 @@
 
 
     .title
-    padding-top: 20px
+      margin-top: 40px
 
   .toast
     position: fixed
@@ -399,6 +399,10 @@
               display: inline-block
               width: 100%
 
+              @media(max-width: $breakpoint-small)
+                font-size: 14px
+                color: blue
+
               .license-copy-text
                 background-color: $accent-500
                 padding         : 10px 0px
@@ -549,6 +553,12 @@
   z-index: 14000
   pointer-events: none
 
+  @media(max-width: $breakpoint-small)
+    white-space: normal
+    max-width: 100px
+    font-size: 10px
+    margin-top: 22px
+
 
 [data-tooltip-content]::after, [data-tooltip-content]::before
   opacity: 0
@@ -567,9 +577,14 @@
 .tooltip-color-code[data-tooltip-content]::after
   margin-top: 10px
   max-width: 293.33px
-  margin-left: -10px
   white-space: normal
   pointer-events: none
+  font-size: 14px
+  margin-left: -10px
+
+  @media(max-width: $breakpoint-small)
+    max-width: 293.33px
+    font-size: 14px
 
 
 .tooltip-permissions[data-tooltip-content]::after
